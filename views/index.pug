@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  - for (message of messages)
+    h2= message.text
+    p= message.user 
+    p= message.added
